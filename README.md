@@ -189,15 +189,3 @@ predict_article(
 
 The function returns the selected model, predicted topic, and uncalibrated class probabilities. In the CNN experiment, this demonstration uses the standard CNN. Keep the notebook session active: trained models are held in memory, and the results ZIP is not a saved-model deployment package.
 
-## Limitations and responsible use
-
-Results use sampled data and one training seed, with no estimate of variability across training seeds. AG News contains historical English news and four broad categories, so results do not establish performance on current news, other languages, or additional topics. Exact duplicate checks do not remove every related story.
-
-Topic predictions do not verify factual accuracy. Probabilities are uncalibrated, and ambiguous articles can receive incorrect labels. Practical use should support human correction and evaluate performance on the intended news source.
-
-## References
-
-- [AG News dataset description](https://www.tensorflow.org/datasets/catalog/ag_news_subset)
-- [Dataset CSV source used by the notebook](https://github.com/mhjabreel/CharCnn_Keras/tree/master/data/ag_news_csv)
-- [Understanding Deep Learning, Simon J. D. Prince](https://udlbook.github.io/udlbook/)
-
